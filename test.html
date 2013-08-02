@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01 Transitional//EN" "www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+	<title>Custom From JS</title>
+	<style>
+		#idSelect {
+			width: 96px;
+			margin-left: 10px;
+			margin-top: 8px;
+		}
+		.styled-select {
+			background: url("select.png") no-repeat scroll 0 0 transparent;
+			line-height: 24px;
+			margin-left: 10px;
+			margin-top: 8px;
+			padding-left: 7px;
+			width: 89px;
+		}
+	</style>
+	<script src="custom_form.js"></script>
+</head>
+<body>
+	<h2>Custom SELECT</h2>
+
+	<select id="idSelect">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+
+	<script>
+		customForm.style(document.getElementById('idSelect'));
+	</script>
+</body>
+</html>
